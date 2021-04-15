@@ -1391,17 +1391,17 @@ void GFX_SetTitle(int32_t cycles, int frameskip, Bits timing, bool paused) {
     bool showbasic = section->Get_bool("showbasic");
     if (showbasic) {
         if (CPU_CycleAutoAdjust) {
-            sprintf(title,"%s%sDOSBox-X %s: %d%%",
+            sprintf(title,"%s%sGSClient %s: %d%%",
                 dosbox_title.c_str(),dosbox_title.empty()?"":" - ",
-                VERSION,(int)internal_cycles);
+                GSVERSION,(int)internal_cycles);
         }
         else {
-            sprintf(title,"%s%sDOSBox-X %s: %d cycles/ms",
+            sprintf(title,"%s%sGSClient %s: %d cycles/ms",
                 dosbox_title.c_str(),dosbox_title.empty()?"":" - ",
-                VERSION,(int)internal_cycles);
+                GSVERSION,(int)internal_cycles);
         }
     } else
-        sprintf(title,"%s%sDOSBox-X", dosbox_title.c_str(),dosbox_title.empty()?"":" - ");
+        sprintf(title,"%s%sGSClient", dosbox_title.c_str(),dosbox_title.empty()?"":" - ");
 
     {
         const char *what = (titlebar != NULL && *titlebar != 0) ? titlebar : RunningProgram;

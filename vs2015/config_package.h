@@ -6,3 +6,4 @@
 #define PACKAGE_URL "https://dosbox-x.com"
 #define PACKAGE_VERSION "0.83.13"
 #define VERSION "0.83.13"
+#define GSVERSION "0.83.13.GS"
