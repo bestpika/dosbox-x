@@ -175,6 +175,7 @@ copy /y %isspath%\DOSBox-X-setup.iss %isspath%\64bit\DOSBox-X-setup.iss
 %isspath%\fart.exe %isspath%\64bit\DOSBox-X-setup.iss "{userappdata}" "{commonappdata}"
 %isspath%\fart.exe %isspath%\64bit\DOSBox-X-setup.iss "HKCU;" "HKA;"
 %isspath%\fart.exe %isspath%\64bit\DOSBox-X-setup.iss "False and not IsWin64" "not IsWin64"
+%isspath%\fart.exe %isspath%\64bit\DOSBox-X-setup.iss "False and False" "InstallAllUsers"
 %isspath%\fart.exe %isspath%\64bit\DOSBox-X-setup.iss " IsTaskSelected" " WizardIsTaskSelected"
 %isspath%\fart.exe %isspath%\64bit\DOSBox-X-setup.iss "IsAdminLoggedOn" "IsAdmin"
 %isspath%\ISCC.exe %isspath%\DOSBox-X-setup.iss
